@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pament Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+    <header>
+        <h1>Payment Form</h1>
+    </header>
+    <main class="red">
+        <hr>
+        <p>Required fields are followed by *</p>
+        <h2>User Information</h2> 
+      <p>
+           Name :* <input type="text" name="name" required placeholder="name">
+        </p>
+        <fieldset>
+          <legend> Gender</legend> 
+      <p>
+          Male <input type="radio" name ="gender">
+
+           Femal <input type="radio" name="gender">
+       </p>
+    </fieldset>
+    <p>Address: <textarea name="addres" id="addres" cols="100" rows="5" placeholder="Address"></textarea> </p>
+    <p>Email: <input type="email" placeholder="email" ></p>
+    <p>Pincode*: <input type="text" required placeholder="pincode"> </p>
+    <hr>
+    <h2>Payment information</h2>
+    <p>Select card type
+    <select name="card_type" id="card_type" >
+        <option value="">--select card--</option>
+        <option value="Visa">Visa</option>
+        <option value="dabit">Dabit</option>
+        <option value="Epay">Epay</option>
+    </select></p>
+    <p>Card_number:* <input type="number" required placeholder="1111-2222-1111-1111"> </p>
+<p>Expridate:* <input type="date" name="Expridate" id="Expridate"> </p>
+<p>CVV: * <input type="password" required placeholder="123"> </p>
+    </main>
+    <footer class="red">
+        <button>Pay now</button>
+    </footer>
+</form>
+</body>
+</html>
